@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="./styles/style.css"> -->
+    <meta name="keywords" content="drear,easy,CSS,HTML,Swiper,PSW,3 rok,Biała Podlaska,Informatyka,Stołówka,biurko,laptop,data-center,money,Git Hub">
+    <meta name="author" content="Tykhoniuk Vladyslav">
+    <meta name="description" content="First lab template">
+    <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto+Mono:ital,wght@0,400;0,700;1,600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <title>Document</title>
+    <link rel="shortcut icon" href="./images/8-Tracks.ico" />
+    <title>Easy Dream</title>
 </head>
 <body>
     <div class="" id="main"></div>
@@ -21,13 +25,35 @@
                         <img src="./images/logo_img.png" alt="" class="img_logo">
                    </a>
                 </div>
-    
+                <!-- <a href="#city_tokyo" class="nav_link">Tokyo</a> -->
                 <nav class="nav_sticky">
                     <ul class="nav_menu">
-                        <li class="nav_item"><a href="#city_tokyo" class="nav_link">Tokyo</a></li>
-                        <li class="nav_item"><a href="#city_london" class="nav_link">London</a></li>
-                        <li class="nav_item"><a href="#city_paris" class="nav_link">Paris</a></li>
-                        <li class="nav_item"><a href="#city_bangkok" class="nav_link">Bangkok</a></li>
+                        <li class="nav_item">
+                            <ul class="toggle_menu"> 
+                                <a href="#" class="toggle_show">Cities</a>
+
+                                <div class="block_hidden">
+                                    <li class="item_toggle"><a href="#city_tokyo" class="nav_link_hidden">Tokyo</a></li>
+                                    <li class="item_toggle"><a href="#city_london" class="nav_link_hidden">London</a></li>
+                                    <li class="item_toggle"><a href="#city_paris" class="nav_link_hidden">Paris</a></li>
+                                    <li class="item_toggle"><a href="#city_bangkok" class="nav_link_hidden">Bangkok</a></li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav_item">
+                            <ul class="toggle_menu"> 
+                                <a href="#" class="toggle_show">Forms</a>
+
+                                <div class="block_hidden">
+                                    <li class="item_toggle"><a href="./form1.html" class="nav_link_hidden">Customer Info</a></li>
+                                    <li class="item_toggle"><a href="./form2.html" class="nav_link_hidden">Service Description</a></li>
+                                    <li class="item_toggle"><a href="./form3.html" class="nav_link_hidden">Place Implementation</a></li>
+                                </div>
+                            </ul>
+
+                        </li>
+                        <!-- <li class="nav_item"><a href="#city_paris" class="nav_link">Paris</a></li>
+                        <li class="nav_item"><a href="#city_bangkok" class="nav_link">Bangkok</a></li> -->
                     </ul>
                 </nav>
             </div>
@@ -572,15 +598,15 @@
                         
                     </div>
 
-                    <h3 class="h3_bangkok">
+                    <h3 class="h3_bangkok" id="h3_idBangkok">
                         Problemy miasta
                     </h3>
 
-                    <span class="span_info_tokyo">
+                    <span class="span_info_tokyo" id="span_idBangkok">
                         W mieście jest zarejestrowane 5,6 mln samochodów, przez co miasto jest ciągle zakorkowane, co stanowi duży problem. W ciągu ostatnich lat zainwestowano ogromne środki w rozbudowę infrastruktury, nowe drogi ekspresowe, wiadukty, tunele i metro, co zmniejszyło zakorkowanie, ale nie w godzinach szczytu. Inwestycje nie osiągnęły skutku, ponieważ w Bangkoku panuje ogromny popyt na samochody. 
                     </span>
 
-                    <span class="span_info_tokyo">
+                    <span class="span_info_tokyo" id="span_idBangkok">
                         Liczba poruszających się po mieście samochodów powoduje duże zanieczyszczenie powietrza. Aby przeciwdziałać zanieczyszczeniom, stworzono sieć parków miejskich, także w jego centrum.
                     </span>
                 </div>
@@ -591,7 +617,7 @@
     <footer class="footer_menu">
         <div class="container">
             <div class="row">
-                <h2 class="footer_student">Tykhoniuk Vladyslav , 3 rok TIIGK, nr. albumu 19455</h2>
+                <h2 class="footer_student" id="footerStudent">Tykhoniuk Vladyslav , 3 rok TIIGK, nr. albumu 19455</h2>
             </div>
         </div>
     </footer>
