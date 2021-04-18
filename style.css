@@ -57,6 +57,8 @@ Forms Styles
 
 .clientInput {
   padding: 1rem;
+
+  border: 1px solid #333;
 }
 
 .block_inputs {
@@ -102,4 +104,26 @@ Forms Styles
   text-align: center;
   font-size: 4rem;
   margin-bottom: 3rem;
+}
+
+.clientInput:focus {
+  outline: none;
+  border: 1px solid #333;
+  cursor: pointer;
+
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  transition: all 0.3s ease 0s;
+}
+
+@media only screen and (max-width: 768px) {
+  .labelCustomer {
+    width: 65%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .labelCustomer {
+    width: 50%;
+  }
 }
