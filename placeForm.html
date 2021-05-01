@@ -15,8 +15,8 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
-    <link rel="shortcut icon" href="./images/customer.png" />
-    <title>Customer Info</title>
+    <link rel="shortcut icon" href="./images/place.png" />
+    <title>Place Implementation</title>
   </head>
   <body>
     <header class="header_menu">
@@ -56,17 +56,17 @@
 
                   <div class="block_hidden">
                     <li class="item_toggle">
-                      <a href="./form1.html" class="nav_link_hidden"
+                      <a href="./customerForm.html" class="nav_link_hidden"
                         >Customer Info</a
                       >
                     </li>
                     <li class="item_toggle">
-                      <a href="./form2.html" class="nav_link_hidden"
+                      <a href="./serviceForm.html" class="nav_link_hidden"
                         >Service Description</a
                       >
                     </li>
                     <li class="item_toggle">
-                      <a href="./form3.html" class="nav_link_hidden"
+                      <a href="./placeForm.html" class="nav_link_hidden"
                         >Place Implementation</a
                       >
                     </li>
@@ -81,31 +81,32 @@
       </div>
     </header>
 
-    <section class="section_customer">
+    <section class="section_place_Implementation">
       <div class="container">
-        <form action="" class="toggle_customer">
+        <form action="" class="toggle_implamantation">
           <div class="block_inputs">
-            <h1 class="h1_Form">Customer Info Form</h1>
+            <h1 class="h1_Form">Place Info Form</h1>
 
-            <label for="" class="labelCustomer"
-              >Client Name
-              <input
-                type="text"
-                class="clientInput"
-                id="client_name"
-                placeholder="Enter the name..."
-                maxlength="25"
+            <label for="" class="labelCustomer labelService"
+              >Description of the place of implementation
+              <textarea
+                name=""
+                class="clientInput textarea_style"
+                id="place_description"
+                class="textarea_style"
+                placeholder="Enter the description..."
                 autocomplete="off"
                 required
-              />
+              ></textarea>
             </label>
 
-            <label for="" class="labelCustomer"
-              >Client Address
+            <label for="" class="labelCustomer labelService">
+              Implementation address
               <input
                 type="text"
                 class="clientInput"
-                id="client_address"
+                name=""
+                id="place_address"
                 placeholder="Enter the address..."
                 maxlength="25"
                 autocomplete="off"
@@ -113,48 +114,46 @@
               />
             </label>
 
-            <label for="" class="labelCustomer">
-              Client Phone
+            <label for="" class="labelCustomer labelService"
+              >The recipient of the product
               <input
                 type="text"
                 class="clientInput"
-                id="client_phone"
-                placeholder="Enter the client phone"
+                id="place_person"
+                placeholder="Enter the reciepent..."
                 maxlength="25"
                 autocomplete="off"
                 required
               />
             </label>
 
-            <label for="" class="labelCustomer"
-              >Client Email
+            <label for="" class="labelCustomer labelService">
+              Phone number of the recipient
+              <input
+                type="number"
+                class="clientInput"
+                id="place_phone"
+                placeholder="Enter the phone number"
+                maxlength="25"
+                autocomplete="off"
+                required
+              />
+            </label>
+
+            <label for="" class="labelCustomer labelService">
+              Recipient's email address
               <input
                 type="email"
                 class="clientInput"
-                id="client_email"
-                placeholder="Enter the client email..."
+                id="place_email"
+                placeholder="Enter the email address..."
                 maxlength="25"
                 autocomplete="off"
                 required
               />
             </label>
 
-            <label for="" class="labelCustomer">
-              Invoice
-              <input
-                type="text"
-                class="clientInput"
-                id="invoice"
-                placeholder="Enter the invoice..."
-                maxlength="25"
-                autocomplete="off"
-                required
-              />
-            </label>
-
-            <button id="btn_sendCustomer" class="btn_send">
-              send customer info
-            </button>
+            <button id="btn_sendPlace" class="btn_send">send place info</button>
           </div>
         </form>
       </div>
