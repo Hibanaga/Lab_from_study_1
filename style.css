@@ -21,6 +21,11 @@
   text-shadow: 2px 2px #0004ff;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 /*
 Forms Styles 
 */
@@ -126,4 +131,120 @@ Forms Styles
   .labelCustomer {
     width: 50%;
   }
+}
+
+/* request xml style */
+
+.container {
+  margin: 0 auto;
+  width: 1140px;
+}
+
+.tableInfo {
+  margin: auto;
+  margin-top: 2rem;
+}
+
+th {
+  border: 2px solid #333;
+  background-color: rgb(211, 161, 95);
+  padding: 0.5rem 0.5rem;
+}
+
+td {
+  border: 1px solid #404040;
+  text-align: center;
+  padding: 0.2rem 0.5rem;
+}
+
+td:nth-child(even) {
+  background-color: beige;
+}
+
+td:nth-child(odd) {
+  background-color: burlywood;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.pushMessage {
+  width: 320px;
+  height: 50px;
+  background-color: rgba(80, 158, 128, 0.568);
+  /* opacity: 0; */
+  animation: show 0.2s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pushMessage {
+  display: block;
+  font-size: 2rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+header {
+  min-height: 100px;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.search {
+  position: relative;
+  margin-right: 10%;
+}
+
+.js-input-search {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+
+.js-btn-search {
+  position: absolute;
+  right: 1%;
+  top: 8%;
+  height: 2.5rem;
+  width: 2.5rem;
+  background-image: url(./images/loupe.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: olive;
+  transition: 0.2s all ease;
+}
+
+.js-btn-search:active {
+  background-color: orange;
+}
+
+.push {
+  position: absolute;
+  top: 120%;
+  left: 5%;
+}
+
+.linkMain {
+  position: absolute;
+  left: 15%;
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
