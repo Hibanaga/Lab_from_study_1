@@ -347,3 +347,8 @@ main {
 .tableInfoContent {
   margin: 0 auto;
 }
+
+.spanFormSmall {
+  font-size: 2rem;
+  color: #fc3f3f;
+}
